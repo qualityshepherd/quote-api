@@ -1,11 +1,7 @@
 import express from 'express'
+import { config } from './config.js'
 import { getRandomQuote, quotes } from './quotes.js'
 const app = express()
-
-const config = {
-  host: 'localhost',
-  port: 4242
-}
 
 app.get('/api/quote', (req, res) => {
   res.send(getRandomQuote(quotes))
