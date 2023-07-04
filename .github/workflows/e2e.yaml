@@ -1,4 +1,4 @@
-name: E2E Tests
+name: API Tests
 on:
   push:
     branches: [main]
@@ -17,7 +17,7 @@ jobs:
         run: npm i
       - name: start server
         run: npm start
-      - name: run e2e tests
+      - name: run api tests
         run: npm test
       - name: stop server
         run: npm stop
