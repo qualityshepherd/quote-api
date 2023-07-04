@@ -12,3 +12,7 @@ A simple little quote api that spits out random quotes.
 
 ## Stop
 1. run `npm stop`
+
+or _really_ stop:
+1. get pid via: `ps aux | app.js`
+1. `kill -9 {pid}`
