@@ -8,14 +8,15 @@ app.get('/api/', (req, res) => {
 })
 
 app.get('/api/:id', (req, res) => {
-  res.send(getQuoteById(req.params.id))
+  const data = getQuoteById(req.params.id)
+  data ? res.send(data[0]) : res.status(404).send({
+    error: `${req.params.id} not found`
+  })
 })
 
-app.use('*', (req, res) => {
-  res.status(404).send({
-    url: req.originalUrl,
-    error: 'sorry... Rafael is not here.'
-  })
+app.use((err, req, res, next) => {
+  console.log("woops...", err)
+  next()
 })
 
 function readData (path = './data.json') {
