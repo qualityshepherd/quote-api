@@ -1,3 +1,5 @@
+[![E2E Tests](https://github.com/qualityshepherd/quote-api/actions/workflows/e2e.yaml/badge.svg)](https://github.com/qualityshepherd/quote-api/actions/workflows/e2e.yaml)
+
 # Quote API
 
 A simple little quote api that spits out random quotes.

@@ -6,7 +6,7 @@ on:
     branches: [main]
 jobs:
   test:
-    timeout-minutes: 20
+    timeout-minutes: 4
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,5 +15,9 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: npm i
-      - name: Run e2e tests
-        run: npm run ci
+      - name: start server
+        run: npm start
+      - name: run e2e tests
+        run: npm test
+      - name: stop server
+        run: npm stop
