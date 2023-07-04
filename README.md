@@ -1,4 +1,4 @@
-[![E2E Tests](https://github.com/qualityshepherd/quote-api/actions/workflows/e2e.yaml/badge.svg)](https://github.com/qualityshepherd/quote-api/actions/workflows/e2e.yaml)
+[![API Tests](https://github.com/qualityshepherd/quote-api/actions/workflows/api.yaml/badge.svg)](https://github.com/qualityshepherd/quote-api/actions/workflows/api.yaml)
 
 # Quote API
 
