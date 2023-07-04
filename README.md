@@ -8,7 +8,7 @@ A simple little quote api that spits out random quotes.
 
 ## Run
 1. run `npm run watch` while in development
-1. run `npm start` for "production" (run forever)
+1. run `npm start` for "production" (runs [pm2](https://github.com/Unitech/pm2))
 
 ## Stop
 1. run `npm stop`

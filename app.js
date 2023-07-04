@@ -9,7 +9,7 @@ app.get('/api/', (req, res) => {
 
 app.get('/api/:id', (req, res) => {
   const data = getQuoteById(req.params.id)
-  data ? res.send(data[0]) : res.status(404).send({
+  data ? res.send(data) : res.status(404).send({
     error: `${req.params.id} not found`
   })
 })
