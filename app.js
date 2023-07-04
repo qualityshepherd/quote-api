@@ -9,13 +9,15 @@ app.get('/api/', (req, res) => {
 
 app.get('/api/:id', (req, res) => {
   const data = getQuoteById(req.params.id)
-  data ? res.send(data) : res.status(404).send({
-    error: `${req.params.id} not found`
-  })
+  data
+    ? res.send(data)
+    : res.status(404).send({
+      error: `${req.params.id} not found`
+    })
 })
 
 app.use((err, req, res, next) => {
-  console.log("woops...", err)
+  console.log('woops...', err)
   next()
 })
 

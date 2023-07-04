@@ -16,3 +16,8 @@ A simple little quote api that spits out random quotes.
 or _really_ stop:
 1. get pid via: `ps aux | app.js`
 1. `kill -9 {pid}`
+
+## Run Tests
+1. start api: `npm start`
+1. run tests: `npm test`
+1. stop api: `npm stop`
