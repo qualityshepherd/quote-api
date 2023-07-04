@@ -20,6 +20,7 @@ or _really_ stop:
 1. `kill -9 {pid}`
 
 ## Run Tests
+> tests use [node-fetch](https://github.com/node-fetch/node-fetch) and run via [tape](https://github.com/ljharb/tape)
 1. start api: `npm start`
 1. run tests: `npm test`
 1. stop api: `npm stop`
