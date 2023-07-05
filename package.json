@@ -3,15 +3,15 @@
   "author": "brine",
   "type": "module",
   "version": "1.0.0",
-  "description": "A simple movie quote api",
+  "description": "a simple--if not silly--movie quote api",
   "main": "app.js",
   "scripts": {
-    "pm2": "pm2",
-    "start": "pm2 start ./node_modules/.bin/babel-node app.js",
+    "start": "pm2 start babel-node app.js",
     "restart": "pm2 restart",
     "stop": "pm2 stop 0 1",
     "watch": "nodemon babel-node app.js",
-    "test": "tape **tests.js",
+    "test": "tape tests.js",
+    "test:prod": "BASEURL=https://api.brine.dev npm test",
     "pretty": "standard --fix"
   },
   "dependencies": {

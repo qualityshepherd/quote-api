@@ -1,7 +1,7 @@
 import test from 'tape'
 import fetch from 'node-fetch'
 
-const baseUrl = 'http://localhost:4242'
+const baseUrl = process.env.BASEURL || 'http://localhost:4242'
 
 test('random quote', async t => {
   const res = await fetch(`${baseUrl}/api`)
