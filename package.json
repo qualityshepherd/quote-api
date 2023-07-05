@@ -11,6 +11,8 @@
     "stop": "pm2 stop 0 1",
     "watch": "nodemon babel-node app.js",
     "test": "tape tests.js",
+    "test:watch": "nodemon tape tests.js",
+    "test:watch:prod": "BASEURL=https://api.brine.dev nodemon tape tests.js",
     "test:prod": "BASEURL=https://api.brine.dev npm test",
     "pretty": "standard --fix"
   },

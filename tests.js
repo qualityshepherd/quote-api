@@ -8,7 +8,7 @@ test('random quote', async t => {
   const data = await res.json()
 
   t.ok(await res.status === 200, 'returns 200')
-  t.ok(await data, 'returns data')
+  t.ok(await data.quote, 'returns data')
 })
 
 test('quote id', async t => {
