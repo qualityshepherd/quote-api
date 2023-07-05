@@ -7,7 +7,7 @@
   "main": "app.js",
   "scripts": {
     "start": "pm2 start babel-node app.js",
-    "restart": "pm2 restart",
+    "restart": "pm2 restart 0 1",
     "stop": "pm2 stop 0 1",
     "watch": "nodemon babel-node app.js",
     "test": "tape tests.js",
