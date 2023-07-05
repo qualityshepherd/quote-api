@@ -2,7 +2,7 @@
 
 # Quote API
 
-A simple little quote api that spits out random quotes.
+A simple--_if not silly_--quote api that spits out random quotes from [Being There](https://www.imdb.com/title/tt0078841/).
 
 ## Setup
 1. run `npm i`
